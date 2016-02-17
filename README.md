@@ -6,7 +6,7 @@ All functions are accessible via the Cipher object.
 
 General Usage:
 
-	`Cipher.[to/from](type [, string] [, key])`
+	`Cipher.[to/from](type, string [, key])`
 
 Note that the key is only needed for the Caesar cipher.
 
