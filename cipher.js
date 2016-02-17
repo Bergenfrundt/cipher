@@ -1,9 +1,8 @@
 var Cipher = {
 	// Cipher
 	to: function (type, string, key) {
-		type = type || 'atbash';
-		string = string || '';
-		key = key || 3;
+		string = (typeof string === 'string') ? string : '';
+		key = (typeof key === 'number' && key <= 26 && key >= 0) ? key : 3;
 		switch (type) {
 			case 'base64':
 				return btoa(string);
@@ -20,9 +19,8 @@ var Cipher = {
 	},
 	// Decipher
 	from: function (type, string, key) {
-		type = type || 'atbash';
-		string = string || '';
-		key = key || 3;
+		string = (typeof string === 'string') ? string : '';
+		key = (typeof key === 'number' && key <= 26 && key >= 0) ? key : 3;
 		switch (type) {
 			case 'base64':
 				return atob(string);
