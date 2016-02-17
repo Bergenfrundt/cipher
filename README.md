@@ -12,7 +12,7 @@ Note that the key is only needed for the Caesar cipher.
 
 To cipher something using the Atbash cipher, use the following snippet:
 
-	`Cipher.to('atbash', 'This will be put through the Atbash cipher.');`
+	`Cipher.to('atbash', 'foo bar');`
 
 ## License
 Cipher is under the MIT License.

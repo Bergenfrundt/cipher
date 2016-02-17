@@ -1,7 +1,76 @@
-html, body {
+@font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto Slab Light"), local("RobotoSlab-Light"), url(https://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJfR_54zmj3SbGZQh3vCOwvY.woff) format("woff")
+}
+@font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37ZrrIa-7acMAeDBVuclsi6Gc.woff) format("woff")
+}
+html,
+body {
 	margin: 0;
 	padding: 0;
+	background-color: #eee;
+	font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
+	font-size: 1.25vmax;
+}
+code {
+	background-color: #eee;
+	font-size: 1vmax;
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+pre code {
+	border-right: 15px solid #eee;
+	border-radius: 0.5vmax;
+	display: block;
+	padding: 15px;
+	margin: 0;
+	overflow: scroll;
 }
 #main {
-	margin: 100px;
+	width: 33%;
+	padding: 5% 10%;
+	margin: auto;
+	background-color: white;
+}
+#footer {
+	width: 53%;
+	padding: 1% 0;
+	margin: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+
+}
+a {
+	text-decoration: none;
+	color: blue;
+}
+a:hover {
+	text-decoration: underline;
+}
+@media screen and (max-width: 64em) {
+	html,
+	body {
+		font-size: 2vmax;
+	}
+	code {
+		font-size: 1.6vmax;
+	}
+    #main {
+        width: 66%;
+    }
+	#footer {
+		width: 86%;
+	}
 }
