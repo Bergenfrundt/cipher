@@ -9,22 +9,23 @@
 	</head>
 	<body>
 		<div id="links">
-			<a href="https://github.com/Loquacious/cipher">View on GitHub</a>
-			<br>
-			<a href="build/scripts/cipher/cipher.js" download>Download Plugin</a>
+			<a href="https://github.com/Loquacious/cipher"><img alt="GitHub Logo" src="assets/images/github.png"></a>
+			<a href="build/scripts/cipher/cipher.js" download><img alt="Download Button" src="assets/images/download.svg"></a>
 		</div>
 		<div id="main">
 			<h1>Cipher</h1>
 			<p>A JavaScript plugin that makes it easier to cipher and decipher your strings.</p>
 			<hr>
 			<h2>Usage</h2>
-			<p>All functions are accessible via the Cipher object.</p>
+			<p>To get Cipher, download the file and link to it in your HTML document like so:</p>
+			<pre><code>&lt;script type="application/javascript" src="path/to/cipher.js">&lt;/script></code></pre>
+			<p>Now you can cipher and decipher basically everything. All functions are accessible via the Cipher object.</p>
 			<p>To cipher something using the Atbash cipher, use the following snippet:</p>
 			<pre><code>Cipher.to('atbash', 'foo bar');</code></pre>
 			<p>To cipher something using the Caesar cipher using a right shift of three, use the following snippet:</p>
 			<pre><code>Cipher.to('caesar', 'foo bar', 3)</code></pre>
 			<p>Here's the general usage of the Cipher plugin:</p>
-			<pre><code>Cipher.[to/from](type, string [, key]);</code></pre>
+			<pre><code>Cipher['to'/'from'](type, string [, key]);</code></pre>
 			<p>Note that the key is only needed for the Caesar cipher.</p>
 			<h2>License</h2>
 			<pre><code>The MIT License (MIT)
