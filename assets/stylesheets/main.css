@@ -24,7 +24,7 @@ code {
 	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 pre code {
-	border-right: 15px solid #eee;
+	/*border-right: 15px solid #eee;*/
 	border-radius: 0.5vmax;
 	display: block;
 	padding: 15px;
@@ -41,6 +41,11 @@ pre code {
 	width: 53%;
 	padding: 2% 0;
 	margin: auto;
+}
+#links {
+	padding: 7.5% 11%;
+	float: right;
+	position: fixed;
 }
 a {
 	text-decoration: none;
@@ -62,5 +67,10 @@ a:hover {
     }
 	#footer {
 		width: 86%;
+	}
+	#links {
+		padding: none;
+		float: none;
+		position: static;
 	}
 }
