@@ -45,11 +45,9 @@ pre code {
 a {
 	text-decoration: none;
 	color: #777;
-	border-radius: 5px;
 }
 a:hover {
-	background-color: #777;
-	color: #fff;
+	text-decoration: underline;
 }
 @media screen and (max-width: 64em) {
 	html,
