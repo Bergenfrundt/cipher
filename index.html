@@ -14,12 +14,15 @@
 			<hr>
 			<h2>Usage</h2>
 			<p>All functions are accessible via the Cipher object.</p>
-			<p>General Usage: <code>Cipher.[to/from](type, string [, key]);</code></p>
+			<p>To cipher something using the Atbash cipher, use the following snippet:</p>
+			<pre><code>Cipher.to('atbash', 'foo bar');</code></pre>
+			<p>To cipher something using the Caesar cipher using a right shift of three, use the following snippet:</p>
+			<pre><code>Cipher.to('caesar', 'foo bar', 3)</code></pre>
+			<p>Here's the general usage of the Cipher plugin:</p>
+			<pre><code>Cipher.[to/from](type, string [, key]);</code></pre>
 			<p>Note that the key is only needed for the Caesar cipher.</p>
-			<p>To cipher something using the Atbash cipher, use the following snippet: <code>Cipher.to('atbash', 'foo bar');</code>.</p>
 			<h2>License</h2>
-			<p><pre><code>
-The MIT License (MIT)
+			<pre><code>The MIT License (MIT)
 
 Copyright (c) 2016 Ryan Nguyen
 
@@ -39,8 +42,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-			</code></pre></p>
+SOFTWARE.</code></pre>
 		</div>
 		<div id="footer">
 			<b><a href="https://github.com/Loquacious/cipher">Cipher</a> is maintained by <a href="https://github.com/Loquacious/">Ryan Nguyen</a>.</b>
